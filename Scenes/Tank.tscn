@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://sprites/tankBody_blue.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Tank.gd" type="Script" id=2]
+
+[node name="Tank" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="Poly" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 18.7025, -15.3457, 18.8127, 13.3019, 12.973, 17.0481, 9.00644, 18.9213, -9.06359, 19.0314, -13.0302, 17.0481, -17.2171, 14.8445, -18.8699, 13.7426, -18.7597, -15.1253, -17.4375, -16.8883, -13.1404, -18.9817, 12.973, -18.9817, 17.9313, -16.7781 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
